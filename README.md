@@ -40,7 +40,3 @@ Summary statistics and correlation matrices were generated to uncover key busine
 * **Geospatial Analysis**: Choropleth maps highlighting 2021 product performance across U.S. states using state abbreviations.
 * **Comparative Retailer Analysis**: Grouped bar charts contrasting year-over-year retailer volume (2020 vs. 2021).
 
-### 5. Predictive Modeling Preparation
-* **Temporal Feature Engineering**: Extracted `YEAR`, `MONTH`, `DAY`, `DAY_OF_WEEK`, `WEEK_OF_YEAR`, and `QUARTER` from `INVOICE_DATE`.
-* **Categorical Encoding**: Applied One-Hot Encoding to categorical attributes (`SALES_METHOD`, `RETAILER`, `REGION`, `STATE`, `PRODUCT_NAME`).
-* **Train/Test Splitting**: Partitioned the dataset into training and testing sets (`X_train`, `X_test`, `y_train`, `y_test`) targeting continuous `SALES` predictions.
