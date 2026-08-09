@@ -23,7 +23,9 @@ The analysis utilizes three main relational datasets:
 * **Data Type Conversion**: Converted `INVOICE_DATE` to standard `datetime` objects and coerced `UNITS_SOLD` into numeric types.
 * **Missing Value Imputation**: Imputed missing `PRICE_PER_UNIT` values using the mode grouped by `PRODUCT_NAME`. Remaining rows with missing essential fields (`UNITS_SOLD`, `RETAILER`, `REGION`, `STATE`, `CITY`) were dropped.
 * **Outlier & Anomaly Removal**: Filtered out invalid transactions where `UNITS_SOLD` equaled `0`. Handled numerical outliers via Winsorization (clipping values at the 5th and 95th percentiles).
-* **Feature Calculation**: Engineered a direct `SALES` feature using: $$\text{SALES} = \text{UNITS\_SOLD} \times \text{PRICE\_PER\_UNIT}$$
+* **Feature Calculation**: Engineered a direct `SALES` feature using:
+
+  $$\text{SALES} = \text{UNITS\_SOLD} \times \text{PRICE\_PER\_UNIT}$$
 
 ### 3. Exploratory Data Analysis (EDA)
 Summary statistics and correlation matrices were generated to uncover key business insights:
@@ -38,4 +40,3 @@ Summary statistics and correlation matrices were generated to uncover key busine
 * **Sales Distribution**: Histograms visualizing total revenue and unit sales distribution.
 * **Geospatial Analysis**: Choropleth maps highlighting 2021 product performance across U.S. states using state abbreviations.
 * **Comparative Retailer Analysis**: Grouped bar charts contrasting year-over-year retailer volume (2020 vs. 2021).
-
