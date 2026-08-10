@@ -1,4 +1,4 @@
-# RUSH Sales Data Analysis and Predictive Modeling
+# RUSH Sales Data Analysis
 
 ## Project Overview
 This project analyzes sales data for **RUSH**—a global sportswear and footwear brand known for innovative designs—to identify key sales trends, actionable insights, and opportunities for business growth. The workflow spans data cleaning, exploratory data analysis (EDA), visualization, feature engineering, and preparation for predictive modeling.
